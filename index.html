@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <main>
       <div class="container">
@@ -24,7 +25,7 @@
           <img src="https://github.com/manzallielson.png" alt="Foto pessoal" />
         </div>
 
-        <h1>Elson Manzalli</h1>
+        <h1 id="userName">Elson Manzalli</h1>
         <a href="https://github.com/manzallielson" target="_blank">
           <img src="images/github.svg" alt="ícone github" />
           ManzalliElson</a
@@ -32,29 +33,58 @@
 
         <p>Aluno Dedicado RocketSeat</p>
 
-        <ul>
-          <li>
+        <ul id="socialLinks">
+          <li class="youtube">
             <a href="https://youtube.com/maykbrito" target="_blank">
               <img src="images/youtube.svg" alt="ícone youtube" />
             </a>
           </li>
-          <li>
+          <li class="facebook">
             <a href="https://facebook.com/elson.manzalli" target="_blank">
               <img src="images/facebook.svg" alt="ícone facebook" />
             </a>
           </li>
-          <li>
+          <li class="instagram">
             <a href="https://www.instagram.com/elson_manzalli/" target="_blank">
               <img src="images/instagram.svg" alt="ícone instagram" />
             </a>
           </li>
-          <li>
+          <li class="twitter">
             <a href="https://twitter.com/maykbrito" target="_blank">
               <img src="images/twitter.svg" alt="ícone twitter" />
+            </a>
+          </li>
+          <li class="linkedin">
+            <a
+              href="https://www.linkedin.com/in/elson-manzalli-6b44237a/"
+              target="_blank"
+            >
+              <img src="images/linkedin.png" alt="ícone twitter" />
             </a>
           </li>
         </ul>
       </div>
     </main>
+
+    <script>
+      const linksSocialMedia = {
+        github: 'ManzalliElson',
+        youtube: '/channel/UCQlhY1Kq-NJV2XhhgTVAr5Q',
+        facebook: 'elson.manzalli',
+        instagram: 'elson_manzalli',
+        twitter: 'elson_manzalli',
+        linkedin: 'in/elson-manzalli-6b44237a/'
+      }
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+
+          li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`
+
+          alert(li.children[0].href)
+        }
+      }
+      changeSocialMediaLinks()
+    </script>
   </body>
 </html>
