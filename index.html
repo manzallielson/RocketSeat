@@ -22,16 +22,20 @@
           <span>
             <img src="images/build.svg" alt="Selo Rocketseat" />
           </span>
-          <img src="https://github.com/manzallielson.png" alt="Foto pessoal" />
+          <img
+            id="userImage"
+            src="http://lorempixel.com/180/180/"
+            alt="Foto pessoal"
+          />
         </div>
 
-        <h1 id="userName">Elson Manzalli</h1>
-        <a href="https://github.com/manzallielson" target="_blank">
+        <h1 id="userName">UserName</h1>
+        <a id="userLink" href="https://github.com/maykbrito" target="_blank">
           <img src="images/github.svg" alt="ícone github" />
-          ManzalliElson</a
-        >
+          <span id="userLogin">Loggin </span>
+        </a>
 
-        <p>Aluno Dedicado RocketSeat</p>
+        <p id="userBio">Bio</p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -66,25 +70,6 @@
       </div>
     </main>
 
-    <script>
-      const linksSocialMedia = {
-        github: 'ManzalliElson',
-        youtube: '/channel/UCQlhY1Kq-NJV2XhhgTVAr5Q',
-        facebook: 'elson.manzalli',
-        instagram: 'elson_manzalli',
-        twitter: 'elson_manzalli',
-        linkedin: 'in/elson-manzalli-6b44237a/'
-      }
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`
-
-          alert(li.children[0].href)
-        }
-      }
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
