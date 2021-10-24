@@ -40,6 +40,28 @@ main {
   position: relative;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes liga {
+  from {
+    transform-style: initial;
+  }
+  to {
+    transform: onmouseover;
+  }
+}
+
+.build {
+  animation: rotation 7s linear infinite;
+}
+
 .avatar span {
   position: absolute;
   top: -15px;
