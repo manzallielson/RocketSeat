@@ -60,16 +60,18 @@ h1 {
 }
 
 a {
+  position: relative;
   color: var(--grey);
   text-decoration: none;
 
-  margin-top: 0.25rem;
+  margin-top: 0rem;
 
   display: flex;
   gap: 0.75rem;
 
   justify-content: center;
   align-items: center;
+  border: 2px;
 }
 
 p {
@@ -86,4 +88,71 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+.youtube {
+  text-align: center;
+  border-style: hidden;
+
+  border-spacing: 0px;
+  border-color: white;
+}
+.youtube:hover {
+  border: 4px;
+  border-style: solid;
+  border-color: red;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.facebook {
+  text-align: center;
+  border-style: hidden;
+
+  border-color: white;
+}
+.facebook:hover {
+  border: 4px;
+  border-style: solid;
+  border-color: blue;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.instagram {
+  text-align: center;
+  border-style: hidden;
+  border-color: white;
+}
+.instagram:hover {
+  border: 4px;
+  border-style: solid;
+  border-color: rgb(226, 123, 6);
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.twitter {
+  border-style: hidden;
+  border-color: white;
+}
+.twitter:hover {
+  border: 4px;
+  border-style: solid;
+  border-color: blue;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.linkedin {
+  border-style: hidden;
+
+  border-color: white;
+}
+.linkedin:hover {
+  border: 4px;
+  border-style: solid;
+  border-color: blue;
+  transition: 0.5s;
+  opacity: 0.7;
 }
